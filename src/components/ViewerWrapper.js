@@ -62,7 +62,7 @@ function ViewerWrapper() {
 				],
 				"id": "0",
 				"showXYZ": true,
-				url: `http://localhost/4cfa25df-ccea-4a39-bd01-944823732e26.x3d?${Date.now()}`
+				url: `https://master.d2rn13k2eop86u.amplifyapp.com/4cfa25df-ccea-4a39-bd01-944823732e26.x3d?${Date.now()}`
 
 			};			
 			setConf(confObj);
