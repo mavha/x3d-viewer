@@ -7,6 +7,7 @@ import Axes from './Axes';
 import './MyX3DViewer.css';
 import ViewpointButtons from './ViewpointButtons';
 import Viewpoints from './Viewpoints';
+import x3d from './4cfa25df-ccea-4a39-bd01-944823732e26.x3d';
 
 export const MyX3DViewer = memo(({conf, clickHandler, mouseoverHandler, mouseoutHandler}) => {
 	const refScene = useRef(null);
@@ -42,7 +43,7 @@ export const MyX3DViewer = memo(({conf, clickHandler, mouseoverHandler, mouseout
 				<scene  is="x3d" ref={refScene} >
 					{ !error && <Viewpoints defaults={defaultVps} custom={conf.viewpoints}/>}
 					<Axes bbox={conf.boundingBox} show={conf.showXYZ} />
-					<inline is="x3d" ref={refInline} nameSpaceName="Model" mapDEFToID="true" url={conf.url}/>
+					<inline is="x3d" ref={refInline} nameSpaceName="Model" mapDEFToID="true" url={x3d}/>
 				</scene>
 			</x3d>
 		</div>) ;
