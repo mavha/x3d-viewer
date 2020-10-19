@@ -26,6 +26,7 @@ export const MyX3DViewer = memo(({conf, clickHandler, mouseoverHandler, mouseout
 					// setError(`Model could not be loaded, please check ${conf.url} format and try again.`);
 				// } else {
 					//transpose error list into shape list with errors
+					console.log(conf.url);
 					const shapes = resolveErrorsByShape(conf.errors);
 					//once I have my "shape map", I process the colors for each one
 					shapes.forEach(shape => updateShape(refInline, shape, clickHandler, mouseoverHandler, mouseoutHandler));
